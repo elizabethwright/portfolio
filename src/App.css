@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+ 
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 5px;
+  padding-left: 20px;
+  width: 150px
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.menu-toggle {
+  margin: 20px;
+  padding-right: 50px;
+  height: 20px
+}
+.portfolio-item {
+  width: 100%;
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
