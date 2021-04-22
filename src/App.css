@@ -1,3 +1,8 @@
+* {
+  /* border: solid 1px red; */
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -52,7 +57,7 @@
  
 /* Style your items */
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
+  background: transparent;
   margin-bottom: 30px;
 }
 
@@ -60,26 +65,161 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* max-width: 80%; */
+  margin: auto;
+  /* border-bottom: solid 1px rgb(209, 209, 209); */
+  background-color: white;
 }
 
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  animation: menu-slide-in .5s;
+}
+
+@keyframes menu-slide-in {
+  /* You could think of as "step 1" */
+  0% {
+    top: -200px;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    top: 0;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 .logo {
-  margin: 5px;
-  padding-left: 20px;
-  width: 150px
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
 }
 .logo img {
   width: 100%;
   height: auto;
 }
-.menu-toggle {
-  margin: 20px;
-  padding-right: 50px;
-  height: 20px
+.menu-toggle, .menu-close {
+  height: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px ;
+  z-index: 1;
 }
+
+.side-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  background: #5f5f5f;
+  width: 20%;
+  padding: 5px;
+  text-align: left;
+  color: white;
+  font-size: small;
+  letter-spacing: 2px;
+  display: none;
+  z-index: 1;
+}
+.side-menu.mobile-menu-visible {
+  display: block;
+
+}
+
+.side-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+@media screen and (min-width: 1100px) {
+  .side-menu {
+    display: block;
+    height: auto;
+    background: transparent;
+    color: #5f5f5f;
+    top: 40px;
+  }
+
+  .side-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .side-menu ul li {
+    margin: 0 5px;
+  }
+
+  .menu-toggle, .menu-close {
+    display: none;
+  }
+}
+
 .portfolio-item {
   width: 100%;
+  font-size: smaller;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  position: relative;
 }
 .portfolio-item img {
   width: 100%;
   height: auto;
+}
+.portfolio-item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .5s ease-in;
+}
+
+.portfolio-item-title {
+  opacity: 0;
+  transition: opacity .25s ease-in;
+}
+
+.portfolio-item-info:hover {
+  background-color: #5f5f5f;
+  color: #ffffff;
+  opacity: .9;
+  transition: opacity .25s ease-in;
+}
+
+.portfolio-item-info:hover .portfolio-item-title {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.portfolio-item-image {}
+
+.portfolio-item-image img {
+  width: 100%;
+}
+.container {
+  max-width: 80%;
+  margin: auto
+}
+.container-header {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
