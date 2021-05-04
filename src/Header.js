@@ -47,7 +47,7 @@ function Header () {
                 <div className={`${ isVisible ? "mobile-menu-visible" : ""} side-menu`}>
                 <button className="menu-close" onClick={menuClick}><FontAwesomeIcon icon={faTimes} /></button>
                     <ul>
-                        <li>RESUME</li>
+                        <li><a href="./resume/Elizabeth-Wright-DESIGNER-2021.pdf" target="_blank">RESUME</a></li>
                         <li>CONTACT </li>
                     </ul>
                 
