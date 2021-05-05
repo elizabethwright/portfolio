@@ -48,7 +48,7 @@ function Header () {
                 <button className="menu-close" onClick={menuClick}><FontAwesomeIcon icon={faTimes} /></button>
                     <ul>
                         <li><a href="./resume/Elizabeth-Wright-DESIGNER-2021.pdf" target="_blank">RESUME</a></li>
-                        <li>CONTACT </li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 
                 

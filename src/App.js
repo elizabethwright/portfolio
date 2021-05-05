@@ -4,6 +4,7 @@ import Masonry from 'react-masonry-css'
 import Header from './Header'
 import PortfolioItem from './PortfolioItem'
 import CarouselModal from './CarouselModal'
+import Contact from './Contact'
 import image1 from "./images/1.jpg"
 import image2 from "./images/2.jpg"
 import image3 from "./images/3.jpg"
@@ -70,6 +71,8 @@ function App() {
           setModalVisible={setModalVisible}
           currentItem={currentItem}
         />) : null }
+
+        <Contact />
 
     </div>
   );
