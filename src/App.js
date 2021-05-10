@@ -15,6 +15,9 @@ import image7 from "./images/7.jpg"
 import image8 from "./images/8.jpg"
 import image9 from "./images/9.jpg"
 import image10 from "./images/10.jpg"
+import image11 from "./images/11.jpg"
+import image12 from "./images/12.jpg"
+import image13 from "./images/13.jpg"
 
 
 function App() {
@@ -28,7 +31,10 @@ function App() {
     {id: 7, name: 'Barrilitos - "Drink It For A Change"', image: image7},
     {id: 8, name: 'Barrilitos - "Drink It For A Change"', image: image8},
     {id: 9, name: 'Barrilitos - "Drink It For A Change"', image: image9},
-    {id: 10, name: 'Barrilitos - Papel Picado Banners', image: image10}
+    {id: 10, name: 'Barrilitos - Papel Picado Banners', image: image10},
+    {id: 11, name: 'Wedding Invitations', image: image11},
+    {id: 12, name: 'David Davila and The Magic Time Machine - Lone Star Theatre Co.', image: image12},
+    {id: 13, name: 'Feel the Whiplash - Lone Star Theatre Co.', image: image13}
   ];
   const [modalVisible, setModalVisible] = useState(false);
   const [currentItem, setCurrentItem] = useState(0);
