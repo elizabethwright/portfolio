@@ -5,7 +5,7 @@ import Header from './Header'
 import PortfolioItem from './PortfolioItem'
 import CarouselModal from './CarouselModal'
 import Contact from './Contact'
-import image1 from "./images/1.jpg"
+// import image1 from "./images/1.jpg"
 import image2 from "./images/2.jpg"
 import image3 from "./images/3.jpg"
 import image4 from "./images/4.jpg"
@@ -22,7 +22,7 @@ import image13 from "./images/13.jpg"
 
 function App() {
   var items = [
-    {id: 1, name: 'New Mexico', image: image1},
+    // {id: 1, name: 'New Mexico', image: image1},
     {id: 2, name: 'Phase II Window Treatments', image: image2},
     {id: 3, name: 'Navajo Rug', image: image3},
     {id: 4, name: 'Wedding Logo', image: image4},
